@@ -1,0 +1,10 @@
+hostname:
+    machine_type=secondary 
+    network_type=eth
+    MAC_address= 00:00:00:00:00:00
+    interface_name=eth1 
+    BOOTPROTO='static'
+    BROADCAST='xx.xx.xx.xx'
+    IPADDR='xx.xx.xx.xx'
+    NETMASK='xx.xx.xx.xx'
+    STARTMODE='onboot'

@@ -1,0 +1,89 @@
+echo "default:"
+echo " ConsoleMethod=ipmi"
+echo " ConsoleSerialDevice = ttyS0"
+echo " ConsoleSerialSpeed = 19200"
+echo " InstallAdapterGateway = xx.xx.xx.xx"
+echo " InstallAdapterName = eth0"
+echo " InstallTemplate = /opt/csm/install/yastcfg.SLES10-x86_64.compute.xml"
+echo " PowerMethod = bmc2"
+        
+nodes=114
+nodepre=sbrxhpc
+
+for ((i=1;$i<=$nodes;i++))
+do
+    if [[ $i -lt 10 ]] ; then
+      pren="00"
+    elif [[ $i -lt 100 ]] ; then
+      pren="0"
+    else
+      pren=""
+    fi
+
+    echo ""
+    echo "$nodepre$pren$i:"
+    echo " ConsoleServerName = bmc$nodepre$pren$i"
+    echo " HWControlNodeId = $nodepre$pren$i"
+    echo " HWControlPoint = bmc$nodepre$pren$i"
+done
+
+nodes=18
+nodepre=hostname_prefix
+
+for ((i=1;$i<=$nodes;i++))
+do
+    if [[ $i -lt 10 ]] ; then
+      pren="00"
+    else
+      pren="0"
+    fi
+
+    echo ""
+    echo "$nodepre$pren$i:"
+    echo " ConsoleServerName = bmc$nodepre$pren$i"
+    echo " HWControlNodeId = $nodepre$pren$i"
+    echo " HWControlPoint = bmc$nodepre$pren$i"
+    echo " InstallTemplate = /opt/csm/install/yastcfg.SLES10-x86_64.fe.xml"
+done
+
+nodes=2
+nodepre=hostname_prefix
+
+for ((i=1;$i<=$nodes;i++))
+do
+    if [[ $i -lt 10 ]] ; then
+      pren="00"
+    else
+      pren="0"
+    fi
+
+    echo ""
+    echo "$nodepre$pren$i:"
+    echo " ConsoleServerName = bmc$nodepre$pren$i"
+    echo " HWControlNodeId = $nodepre$pren$i"
+    echo " HWControlPoint = bmc$nodepre$pren$i"
+done
+
+nodes=2
+nodepre=hostname_prefix
+
+for ((i=1;$i<=$nodes;i++))
+do
+    if [[ $i -lt 10 ]] ; then
+      pren="00"
+    else
+      pren="0"
+    fi
+
+    echo ""
+    echo "$nodepre$pren$i:"
+    echo " ConsoleServerName = bmc$nodepre$pren$i"
+    echo " HWControlNodeId = $nodepre$pren$i"
+    echo " HWControlPoint = bmc$nodepre$pren$i"
+done
+
+echo ""
+echo "hostname:"
+echo " ConsoleServerName = bmchostname"
+echo " HWControlNodeId =hostname"
+echo " HWControlPoint = bmchostname"

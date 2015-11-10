@@ -1,0 +1,711 @@
+default:
+ ConsoleMethod=ipmi
+ ConsoleSerialDevice = ttyS0
+ ConsoleSerialSpeed = 19200
+ InstallAdapterGateway = 10.0.0.202
+ InstallAdapterName = eth0
+ InstallTemplate = /opt/csm/install/yastcfg.SLES10-x86_64.compute.xml
+ PowerMethod = bmc2
+
+sbrxhpc001:
+ ConsoleServerName = bmcsbrxhpc001
+ HWControlNodeId = sbrxhpc001
+ HWControlPoint = bmcsbrxhpc001
+
+sbrxhpc002:
+ ConsoleServerName = bmcsbrxhpc002
+ HWControlNodeId = sbrxhpc002
+ HWControlPoint = bmcsbrxhpc002
+
+sbrxhpc003:
+ ConsoleServerName = bmcsbrxhpc003
+ HWControlNodeId = sbrxhpc003
+ HWControlPoint = bmcsbrxhpc003
+
+sbrxhpc004:
+ ConsoleServerName = bmcsbrxhpc004
+ HWControlNodeId = sbrxhpc004
+ HWControlPoint = bmcsbrxhpc004
+
+sbrxhpc005:
+ ConsoleServerName = bmcsbrxhpc005
+ HWControlNodeId = sbrxhpc005
+ HWControlPoint = bmcsbrxhpc005
+
+sbrxhpc006:
+ ConsoleServerName = bmcsbrxhpc006
+ HWControlNodeId = sbrxhpc006
+ HWControlPoint = bmcsbrxhpc006
+
+sbrxhpc007:
+ ConsoleServerName = bmcsbrxhpc007
+ HWControlNodeId = sbrxhpc007
+ HWControlPoint = bmcsbrxhpc007
+
+sbrxhpc008:
+ ConsoleServerName = bmcsbrxhpc008
+ HWControlNodeId = sbrxhpc008
+ HWControlPoint = bmcsbrxhpc008
+
+sbrxhpc009:
+ ConsoleServerName = bmcsbrxhpc009
+ HWControlNodeId = sbrxhpc009
+ HWControlPoint = bmcsbrxhpc009
+
+sbrxhpc010:
+ ConsoleServerName = bmcsbrxhpc010
+ HWControlNodeId = sbrxhpc010
+ HWControlPoint = bmcsbrxhpc010
+
+sbrxhpc011:
+ ConsoleServerName = bmcsbrxhpc011
+ HWControlNodeId = sbrxhpc011
+ HWControlPoint = bmcsbrxhpc011
+
+sbrxhpc012:
+ ConsoleServerName = bmcsbrxhpc012
+ HWControlNodeId = sbrxhpc012
+ HWControlPoint = bmcsbrxhpc012
+
+sbrxhpc013:
+ ConsoleServerName = bmcsbrxhpc013
+ HWControlNodeId = sbrxhpc013
+ HWControlPoint = bmcsbrxhpc013
+
+sbrxhpc014:
+ ConsoleServerName = bmcsbrxhpc014
+ HWControlNodeId = sbrxhpc014
+ HWControlPoint = bmcsbrxhpc014
+
+sbrxhpc015:
+ ConsoleServerName = bmcsbrxhpc015
+ HWControlNodeId = sbrxhpc015
+ HWControlPoint = bmcsbrxhpc015
+
+sbrxhpc016:
+ ConsoleServerName = bmcsbrxhpc016
+ HWControlNodeId = sbrxhpc016
+ HWControlPoint = bmcsbrxhpc016
+
+sbrxhpc017:
+ ConsoleServerName = bmcsbrxhpc017
+ HWControlNodeId = sbrxhpc017
+ HWControlPoint = bmcsbrxhpc017
+
+sbrxhpc018:
+ ConsoleServerName = bmcsbrxhpc018
+ HWControlNodeId = sbrxhpc018
+ HWControlPoint = bmcsbrxhpc018
+
+sbrxhpc019:
+ ConsoleServerName = bmcsbrxhpc019
+ HWControlNodeId = sbrxhpc019
+ HWControlPoint = bmcsbrxhpc019
+
+sbrxhpc020:
+ ConsoleServerName = bmcsbrxhpc020
+ HWControlNodeId = sbrxhpc020
+ HWControlPoint = bmcsbrxhpc020
+
+sbrxhpc021:
+ ConsoleServerName = bmcsbrxhpc021
+ HWControlNodeId = sbrxhpc021
+ HWControlPoint = bmcsbrxhpc021
+
+sbrxhpc022:
+ ConsoleServerName = bmcsbrxhpc022
+ HWControlNodeId = sbrxhpc022
+ HWControlPoint = bmcsbrxhpc022
+
+sbrxhpc023:
+ ConsoleServerName = bmcsbrxhpc023
+ HWControlNodeId = sbrxhpc023
+ HWControlPoint = bmcsbrxhpc023
+
+sbrxhpc024:
+ ConsoleServerName = bmcsbrxhpc024
+ HWControlNodeId = sbrxhpc024
+ HWControlPoint = bmcsbrxhpc024
+
+sbrxhpc025:
+ ConsoleServerName = bmcsbrxhpc025
+ HWControlNodeId = sbrxhpc025
+ HWControlPoint = bmcsbrxhpc025
+
+sbrxhpc026:
+ ConsoleServerName = bmcsbrxhpc026
+ HWControlNodeId = sbrxhpc026
+ HWControlPoint = bmcsbrxhpc026
+
+sbrxhpc027:
+ ConsoleServerName = bmcsbrxhpc027
+ HWControlNodeId = sbrxhpc027
+ HWControlPoint = bmcsbrxhpc027
+
+sbrxhpc028:
+ ConsoleServerName = bmcsbrxhpc028
+ HWControlNodeId = sbrxhpc028
+ HWControlPoint = bmcsbrxhpc028
+
+sbrxhpc029:
+ ConsoleServerName = bmcsbrxhpc029
+ HWControlNodeId = sbrxhpc029
+ HWControlPoint = bmcsbrxhpc029
+
+sbrxhpc030:
+ ConsoleServerName = bmcsbrxhpc030
+ HWControlNodeId = sbrxhpc030
+ HWControlPoint = bmcsbrxhpc030
+
+sbrxhpc031:
+ ConsoleServerName = bmcsbrxhpc031
+ HWControlNodeId = sbrxhpc031
+ HWControlPoint = bmcsbrxhpc031
+
+sbrxhpc032:
+ ConsoleServerName = bmcsbrxhpc032
+ HWControlNodeId = sbrxhpc032
+ HWControlPoint = bmcsbrxhpc032
+
+sbrxhpc033:
+ ConsoleServerName = bmcsbrxhpc033
+ HWControlNodeId = sbrxhpc033
+ HWControlPoint = bmcsbrxhpc033
+
+sbrxhpc034:
+ ConsoleServerName = bmcsbrxhpc034
+ HWControlNodeId = sbrxhpc034
+ HWControlPoint = bmcsbrxhpc034
+
+sbrxhpc035:
+ ConsoleServerName = bmcsbrxhpc035
+ HWControlNodeId = sbrxhpc035
+ HWControlPoint = bmcsbrxhpc035
+
+sbrxhpc036:
+ ConsoleServerName = bmcsbrxhpc036
+ HWControlNodeId = sbrxhpc036
+ HWControlPoint = bmcsbrxhpc036
+
+sbrxhpc037:
+ ConsoleServerName = bmcsbrxhpc037
+ HWControlNodeId = sbrxhpc037
+ HWControlPoint = bmcsbrxhpc037
+
+sbrxhpc038:
+ ConsoleServerName = bmcsbrxhpc038
+ HWControlNodeId = sbrxhpc038
+ HWControlPoint = bmcsbrxhpc038
+
+sbrxhpc039:
+ ConsoleServerName = bmcsbrxhpc039
+ HWControlNodeId = sbrxhpc039
+ HWControlPoint = bmcsbrxhpc039
+
+sbrxhpc040:
+ ConsoleServerName = bmcsbrxhpc040
+ HWControlNodeId = sbrxhpc040
+ HWControlPoint = bmcsbrxhpc040
+
+sbrxhpc041:
+ ConsoleServerName = bmcsbrxhpc041
+ HWControlNodeId = sbrxhpc041
+ HWControlPoint = bmcsbrxhpc041
+
+sbrxhpc042:
+ ConsoleServerName = bmcsbrxhpc042
+ HWControlNodeId = sbrxhpc042
+ HWControlPoint = bmcsbrxhpc042
+
+sbrxhpc043:
+ ConsoleServerName = bmcsbrxhpc043
+ HWControlNodeId = sbrxhpc043
+ HWControlPoint = bmcsbrxhpc043
+
+sbrxhpc044:
+ ConsoleServerName = bmcsbrxhpc044
+ HWControlNodeId = sbrxhpc044
+ HWControlPoint = bmcsbrxhpc044
+
+sbrxhpc045:
+ ConsoleServerName = bmcsbrxhpc045
+ HWControlNodeId = sbrxhpc045
+ HWControlPoint = bmcsbrxhpc045
+
+sbrxhpc046:
+ ConsoleServerName = bmcsbrxhpc046
+ HWControlNodeId = sbrxhpc046
+ HWControlPoint = bmcsbrxhpc046
+
+sbrxhpc047:
+ ConsoleServerName = bmcsbrxhpc047
+ HWControlNodeId = sbrxhpc047
+ HWControlPoint = bmcsbrxhpc047
+
+sbrxhpc048:
+ ConsoleServerName = bmcsbrxhpc048
+ HWControlNodeId = sbrxhpc048
+ HWControlPoint = bmcsbrxhpc048
+
+sbrxhpc049:
+ ConsoleServerName = bmcsbrxhpc049
+ HWControlNodeId = sbrxhpc049
+ HWControlPoint = bmcsbrxhpc049
+
+sbrxhpc050:
+ ConsoleServerName = bmcsbrxhpc050
+ HWControlNodeId = sbrxhpc050
+ HWControlPoint = bmcsbrxhpc050
+
+sbrxhpc051:
+ ConsoleServerName = bmcsbrxhpc051
+ HWControlNodeId = sbrxhpc051
+ HWControlPoint = bmcsbrxhpc051
+
+sbrxhpc052:
+ ConsoleServerName = bmcsbrxhpc052
+ HWControlNodeId = sbrxhpc052
+ HWControlPoint = bmcsbrxhpc052
+
+sbrxhpc053:
+ ConsoleServerName = bmcsbrxhpc053
+ HWControlNodeId = sbrxhpc053
+ HWControlPoint = bmcsbrxhpc053
+
+sbrxhpc054:
+ ConsoleServerName = bmcsbrxhpc054
+ HWControlNodeId = sbrxhpc054
+ HWControlPoint = bmcsbrxhpc054
+
+sbrxhpc055:
+ ConsoleServerName = bmcsbrxhpc055
+ HWControlNodeId = sbrxhpc055
+ HWControlPoint = bmcsbrxhpc055
+
+sbrxhpc056:
+ ConsoleServerName = bmcsbrxhpc056
+ HWControlNodeId = sbrxhpc056
+ HWControlPoint = bmcsbrxhpc056
+
+sbrxhpc057:
+ ConsoleServerName = bmcsbrxhpc057
+ HWControlNodeId = sbrxhpc057
+ HWControlPoint = bmcsbrxhpc057
+
+sbrxhpc058:
+ ConsoleServerName = bmcsbrxhpc058
+ HWControlNodeId = sbrxhpc058
+ HWControlPoint = bmcsbrxhpc058
+
+sbrxhpc059:
+ ConsoleServerName = bmcsbrxhpc059
+ HWControlNodeId = sbrxhpc059
+ HWControlPoint = bmcsbrxhpc059
+
+sbrxhpc060:
+ ConsoleServerName = bmcsbrxhpc060
+ HWControlNodeId = sbrxhpc060
+ HWControlPoint = bmcsbrxhpc060
+
+sbrxhpc061:
+ ConsoleServerName = bmcsbrxhpc061
+ HWControlNodeId = sbrxhpc061
+ HWControlPoint = bmcsbrxhpc061
+
+sbrxhpc062:
+ ConsoleServerName = bmcsbrxhpc062
+ HWControlNodeId = sbrxhpc062
+ HWControlPoint = bmcsbrxhpc062
+
+sbrxhpc063:
+ ConsoleServerName = bmcsbrxhpc063
+ HWControlNodeId = sbrxhpc063
+ HWControlPoint = bmcsbrxhpc063
+
+sbrxhpc064:
+ ConsoleServerName = bmcsbrxhpc064
+ HWControlNodeId = sbrxhpc064
+ HWControlPoint = bmcsbrxhpc064
+
+sbrxhpc065:
+ ConsoleServerName = bmcsbrxhpc065
+ HWControlNodeId = sbrxhpc065
+ HWControlPoint = bmcsbrxhpc065
+
+sbrxhpc066:
+ ConsoleServerName = bmcsbrxhpc066
+ HWControlNodeId = sbrxhpc066
+ HWControlPoint = bmcsbrxhpc066
+
+sbrxhpc067:
+ ConsoleServerName = bmcsbrxhpc067
+ HWControlNodeId = sbrxhpc067
+ HWControlPoint = bmcsbrxhpc067
+
+sbrxhpc068:
+ ConsoleServerName = bmcsbrxhpc068
+ HWControlNodeId = sbrxhpc068
+ HWControlPoint = bmcsbrxhpc068
+
+sbrxhpc069:
+ ConsoleServerName = bmcsbrxhpc069
+ HWControlNodeId = sbrxhpc069
+ HWControlPoint = bmcsbrxhpc069
+
+sbrxhpc070:
+ ConsoleServerName = bmcsbrxhpc070
+ HWControlNodeId = sbrxhpc070
+ HWControlPoint = bmcsbrxhpc070
+
+sbrxhpc071:
+ ConsoleServerName = bmcsbrxhpc071
+ HWControlNodeId = sbrxhpc071
+ HWControlPoint = bmcsbrxhpc071
+
+sbrxhpc072:
+ ConsoleServerName = bmcsbrxhpc072
+ HWControlNodeId = sbrxhpc072
+ HWControlPoint = bmcsbrxhpc072
+
+sbrxhpc073:
+ ConsoleServerName = bmcsbrxhpc073
+ HWControlNodeId = sbrxhpc073
+ HWControlPoint = bmcsbrxhpc073
+
+sbrxhpc074:
+ ConsoleServerName = bmcsbrxhpc074
+ HWControlNodeId = sbrxhpc074
+ HWControlPoint = bmcsbrxhpc074
+
+sbrxhpc075:
+ ConsoleServerName = bmcsbrxhpc075
+ HWControlNodeId = sbrxhpc075
+ HWControlPoint = bmcsbrxhpc075
+
+sbrxhpc076:
+ ConsoleServerName = bmcsbrxhpc076
+ HWControlNodeId = sbrxhpc076
+ HWControlPoint = bmcsbrxhpc076
+
+sbrxhpc077:
+ ConsoleServerName = bmcsbrxhpc077
+ HWControlNodeId = sbrxhpc077
+ HWControlPoint = bmcsbrxhpc077
+
+sbrxhpc078:
+ ConsoleServerName = bmcsbrxhpc078
+ HWControlNodeId = sbrxhpc078
+ HWControlPoint = bmcsbrxhpc078
+
+sbrxhpc079:
+ ConsoleServerName = bmcsbrxhpc079
+ HWControlNodeId = sbrxhpc079
+ HWControlPoint = bmcsbrxhpc079
+
+sbrxhpc080:
+ ConsoleServerName = bmcsbrxhpc080
+ HWControlNodeId = sbrxhpc080
+ HWControlPoint = bmcsbrxhpc080
+
+sbrxhpc081:
+ ConsoleServerName = bmcsbrxhpc081
+ HWControlNodeId = sbrxhpc081
+ HWControlPoint = bmcsbrxhpc081
+
+sbrxhpc082:
+ ConsoleServerName = bmcsbrxhpc082
+ HWControlNodeId = sbrxhpc082
+ HWControlPoint = bmcsbrxhpc082
+
+sbrxhpc083:
+ ConsoleServerName = bmcsbrxhpc083
+ HWControlNodeId = sbrxhpc083
+ HWControlPoint = bmcsbrxhpc083
+
+sbrxhpc084:
+ ConsoleServerName = bmcsbrxhpc084
+ HWControlNodeId = sbrxhpc084
+ HWControlPoint = bmcsbrxhpc084
+
+sbrxhpc085:
+ ConsoleServerName = bmcsbrxhpc085
+ HWControlNodeId = sbrxhpc085
+ HWControlPoint = bmcsbrxhpc085
+
+sbrxhpc086:
+ ConsoleServerName = bmcsbrxhpc086
+ HWControlNodeId = sbrxhpc086
+ HWControlPoint = bmcsbrxhpc086
+
+sbrxhpc087:
+ ConsoleServerName = bmcsbrxhpc087
+ HWControlNodeId = sbrxhpc087
+ HWControlPoint = bmcsbrxhpc087
+
+sbrxhpc088:
+ ConsoleServerName = bmcsbrxhpc088
+ HWControlNodeId = sbrxhpc088
+ HWControlPoint = bmcsbrxhpc088
+
+sbrxhpc089:
+ ConsoleServerName = bmcsbrxhpc089
+ HWControlNodeId = sbrxhpc089
+ HWControlPoint = bmcsbrxhpc089
+
+sbrxhpc090:
+ ConsoleServerName = bmcsbrxhpc090
+ HWControlNodeId = sbrxhpc090
+ HWControlPoint = bmcsbrxhpc090
+
+sbrxhpc091:
+ ConsoleServerName = bmcsbrxhpc091
+ HWControlNodeId = sbrxhpc091
+ HWControlPoint = bmcsbrxhpc091
+
+sbrxhpc092:
+ ConsoleServerName = bmcsbrxhpc092
+ HWControlNodeId = sbrxhpc092
+ HWControlPoint = bmcsbrxhpc092
+
+sbrxhpc093:
+ ConsoleServerName = bmcsbrxhpc093
+ HWControlNodeId = sbrxhpc093
+ HWControlPoint = bmcsbrxhpc093
+
+sbrxhpc094:
+ ConsoleServerName = bmcsbrxhpc094
+ HWControlNodeId = sbrxhpc094
+ HWControlPoint = bmcsbrxhpc094
+
+sbrxhpc095:
+ ConsoleServerName = bmcsbrxhpc095
+ HWControlNodeId = sbrxhpc095
+ HWControlPoint = bmcsbrxhpc095
+
+sbrxhpc096:
+ ConsoleServerName = bmcsbrxhpc096
+ HWControlNodeId = sbrxhpc096
+ HWControlPoint = bmcsbrxhpc096
+
+sbrxhpc097:
+ ConsoleServerName = bmcsbrxhpc097
+ HWControlNodeId = sbrxhpc097
+ HWControlPoint = bmcsbrxhpc097
+
+sbrxhpc098:
+ ConsoleServerName = bmcsbrxhpc098
+ HWControlNodeId = sbrxhpc098
+ HWControlPoint = bmcsbrxhpc098
+
+sbrxhpc099:
+ ConsoleServerName = bmcsbrxhpc099
+ HWControlNodeId = sbrxhpc099
+ HWControlPoint = bmcsbrxhpc099
+
+sbrxhpc100:
+ ConsoleServerName = bmcsbrxhpc100
+ HWControlNodeId = sbrxhpc100
+ HWControlPoint = bmcsbrxhpc100
+
+sbrxhpc101:
+ ConsoleServerName = bmcsbrxhpc101
+ HWControlNodeId = sbrxhpc101
+ HWControlPoint = bmcsbrxhpc101
+
+sbrxhpc102:
+ ConsoleServerName = bmcsbrxhpc102
+ HWControlNodeId = sbrxhpc102
+ HWControlPoint = bmcsbrxhpc102
+
+sbrxhpc103:
+ ConsoleServerName = bmcsbrxhpc103
+ HWControlNodeId = sbrxhpc103
+ HWControlPoint = bmcsbrxhpc103
+
+sbrxhpc104:
+ ConsoleServerName = bmcsbrxhpc104
+ HWControlNodeId = sbrxhpc104
+ HWControlPoint = bmcsbrxhpc104
+
+sbrxhpc105:
+ ConsoleServerName = bmcsbrxhpc105
+ HWControlNodeId = sbrxhpc105
+ HWControlPoint = bmcsbrxhpc105
+
+sbrxhpc106:
+ ConsoleServerName = bmcsbrxhpc106
+ HWControlNodeId = sbrxhpc106
+ HWControlPoint = bmcsbrxhpc106
+
+sbrxhpc107:
+ ConsoleServerName = bmcsbrxhpc107
+ HWControlNodeId = sbrxhpc107
+ HWControlPoint = bmcsbrxhpc107
+
+sbrxhpc108:
+ ConsoleServerName = bmcsbrxhpc108
+ HWControlNodeId = sbrxhpc108
+ HWControlPoint = bmcsbrxhpc108
+
+sbrxhpc109:
+ ConsoleServerName = bmcsbrxhpc109
+ HWControlNodeId = sbrxhpc109
+ HWControlPoint = bmcsbrxhpc109
+
+sbrxhpc110:
+ ConsoleServerName = bmcsbrxhpc110
+ HWControlNodeId = sbrxhpc110
+ HWControlPoint = bmcsbrxhpc110
+
+sbrxhpc111:
+ ConsoleServerName = bmcsbrxhpc111
+ HWControlNodeId = sbrxhpc111
+ HWControlPoint = bmcsbrxhpc111
+
+sbrxhpc112:
+ ConsoleServerName = bmcsbrxhpc112
+ HWControlNodeId = sbrxhpc112
+ HWControlPoint = bmcsbrxhpc112
+
+sbrxhpc113:
+ ConsoleServerName = bmcsbrxhpc113
+ HWControlNodeId = sbrxhpc113
+ HWControlPoint = bmcsbrxhpc113
+
+sbrxhpc114:
+ ConsoleServerName = bmcsbrxhpc114
+ HWControlNodeId = sbrxhpc114
+ HWControlPoint = bmcsbrxhpc114
+
+sbrxfe001:
+ ConsoleServerName = bmcsbrxfe001
+ HWControlNodeId = sbrxfe001
+ HWControlPoint = bmcsbrxfe001
+ InstallTemplate = /opt/csm/install/yastcfg.SLES10-x86_64.fe.xml
+
+sbrxfe002:
+ ConsoleServerName = bmcsbrxfe002
+ HWControlNodeId = sbrxfe002
+ HWControlPoint = bmcsbrxfe002
+ InstallTemplate = /opt/csm/install/yastcfg.SLES10-x86_64.fe.xml
+
+sbrxfe003:
+ ConsoleServerName = bmcsbrxfe003
+ HWControlNodeId = sbrxfe003
+ HWControlPoint = bmcsbrxfe003
+ InstallTemplate = /opt/csm/install/yastcfg.SLES10-x86_64.fe.xml
+
+sbrxfe004:
+ ConsoleServerName = bmcsbrxfe004
+ HWControlNodeId = sbrxfe004
+ HWControlPoint = bmcsbrxfe004
+ InstallTemplate = /opt/csm/install/yastcfg.SLES10-x86_64.fe.xml
+
+sbrxfe005:
+ ConsoleServerName = bmcsbrxfe005
+ HWControlNodeId = sbrxfe005
+ HWControlPoint = bmcsbrxfe005
+ InstallTemplate = /opt/csm/install/yastcfg.SLES10-x86_64.fe.xml
+
+sbrxfe006:
+ ConsoleServerName = bmcsbrxfe006
+ HWControlNodeId = sbrxfe006
+ HWControlPoint = bmcsbrxfe006
+ InstallTemplate = /opt/csm/install/yastcfg.SLES10-x86_64.fe.xml
+
+sbrxfe007:
+ ConsoleServerName = bmcsbrxfe007
+ HWControlNodeId = sbrxfe007
+ HWControlPoint = bmcsbrxfe007
+ InstallTemplate = /opt/csm/install/yastcfg.SLES10-x86_64.fe.xml
+
+sbrxfe008:
+ ConsoleServerName = bmcsbrxfe008
+ HWControlNodeId = sbrxfe008
+ HWControlPoint = bmcsbrxfe008
+ InstallTemplate = /opt/csm/install/yastcfg.SLES10-x86_64.fe.xml
+
+sbrxfe009:
+ ConsoleServerName = bmcsbrxfe009
+ HWControlNodeId = sbrxfe009
+ HWControlPoint = bmcsbrxfe009
+ InstallTemplate = /opt/csm/install/yastcfg.SLES10-x86_64.fe.xml
+
+sbrxfe010:
+ ConsoleServerName = bmcsbrxfe010
+ HWControlNodeId = sbrxfe010
+ HWControlPoint = bmcsbrxfe010
+ InstallTemplate = /opt/csm/install/yastcfg.SLES10-x86_64.fe.xml
+
+sbrxfe011:
+ ConsoleServerName = bmcsbrxfe011
+ HWControlNodeId = sbrxfe011
+ HWControlPoint = bmcsbrxfe011
+ InstallTemplate = /opt/csm/install/yastcfg.SLES10-x86_64.fe.xml
+
+sbrxfe012:
+ ConsoleServerName = bmcsbrxfe012
+ HWControlNodeId = sbrxfe012
+ HWControlPoint = bmcsbrxfe012
+ InstallTemplate = /opt/csm/install/yastcfg.SLES10-x86_64.fe.xml
+
+sbrxfe013:
+ ConsoleServerName = bmcsbrxfe013
+ HWControlNodeId = sbrxfe013
+ HWControlPoint = bmcsbrxfe013
+ InstallTemplate = /opt/csm/install/yastcfg.SLES10-x86_64.fe.xml
+
+sbrxfe014:
+ ConsoleServerName = bmcsbrxfe014
+ HWControlNodeId = sbrxfe014
+ HWControlPoint = bmcsbrxfe014
+ InstallTemplate = /opt/csm/install/yastcfg.SLES10-x86_64.fe.xml
+
+sbrxfe015:
+ ConsoleServerName = bmcsbrxfe015
+ HWControlNodeId = sbrxfe015
+ HWControlPoint = bmcsbrxfe015
+ InstallTemplate = /opt/csm/install/yastcfg.SLES10-x86_64.fe.xml
+
+sbrxfe016:
+ ConsoleServerName = bmcsbrxfe016
+ HWControlNodeId = sbrxfe016
+ HWControlPoint = bmcsbrxfe016
+ InstallTemplate = /opt/csm/install/yastcfg.SLES10-x86_64.fe.xml
+
+sbrxfe017:
+ ConsoleServerName = bmcsbrxfe017
+ HWControlNodeId = sbrxfe017
+ HWControlPoint = bmcsbrxfe017
+ InstallTemplate = /opt/csm/install/yastcfg.SLES10-x86_64.fe.xml
+
+sbrxfe018:
+ ConsoleServerName = bmcsbrxfe018
+ HWControlNodeId = sbrxfe018
+ HWControlPoint = bmcsbrxfe018
+ InstallTemplate = /opt/csm/install/yastcfg.SLES10-x86_64.fe.xml
+
+sbrxsto001:
+ ConsoleServerName = bmcsbrxsto001
+ HWControlNodeId = sbrxsto001
+ HWControlPoint = bmcsbrxsto001
+
+sbrxsto002:
+ ConsoleServerName = bmcsbrxsto002
+ HWControlNodeId = sbrxsto002
+ HWControlPoint = bmcsbrxsto002
+
+sbrxproc001:
+ ConsoleServerName = bmcsbrxproc001
+ HWControlNodeId = sbrxproc001
+ HWControlPoint = bmcsbrxproc001
+
+sbrxproc002:
+ ConsoleServerName = bmcsbrxproc002
+ HWControlNodeId = sbrxproc002
+ HWControlPoint = bmcsbrxproc002
+
+sbrxmgt002:
+ ConsoleServerName = bmcsbrxmgt002
+ HWControlNodeId = sbrxmgt002
+ HWControlPoint = bmcsbrxmgt002

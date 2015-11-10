@@ -1,0 +1,8 @@
+lsnodes > /etc/hosts.equiv
+lsnodes -x -i >> /etc/hosts.equiv
+lsnodes | sed s/sbr/ibsbr/ >> /etc/hosts.equiv
+for node in `lsnodes | sed s/sbr/ibsbr/ `; do gethostip $node | awk '{print $2}'; done >> /etc/hosts.equiv
+echo hostname >> /etc/hosts.equiv
+echo xx.xx.xx.xx >> /etc/hosts.equiv
+echo xx.xx.xx.xx >> /etc/hosts.equiv
+echo hostname.company.com >> /etc/hosts.equiv

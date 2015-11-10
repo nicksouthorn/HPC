@@ -1,0 +1,54 @@
+#!/bin/bash
+
+# cluster ip
+pre=10.0.0.
+# bmc ip
+prebmc=10.0.1.
+# ib ip
+preib=10.1.0.
+prehost=hostname_prefix
+
+nodes=112
+
+for ((i=1;$i<=$nodes;i++))
+do
+    if [[ $i -lt 100 ]] ; then
+      pren="0"
+    elif [[ $i -lt 10 ]] ; then 
+      pren="00"
+    else
+      pren=""
+    fi
+
+    echo ${pre}$i  $prehost$pren$i
+done
+
+echo
+
+for ((i=1;$i<=$nodes;i++))
+do
+    if [[ $i -lt 10 ]] ; then
+      pren="00"
+    elif [[ $i -lt 100 ]] ; then
+      pren="0"
+    else
+      pren=""
+    fi
+
+    echo ${prebmc}$i  bmc$prehost$pren$i
+done
+
+echo 
+
+for ((i=1;$i<=$nodes;i++))
+do
+    if [[ $i -lt 10 ]] ; then
+      pren="00"
+    elif [[ $i -lt 100 ]] ; then
+      pren="0"
+    else
+      pren=""
+    fi
+
+    echo ${preib}$i  ib$prehost$pren$i
+done

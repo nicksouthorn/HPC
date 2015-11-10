@@ -1,0 +1,15 @@
+#!/bin/bash
+
+master=hostname
+
+for node in `lsnodes`
+do
+        arg=$node,ib$node
+        arg=$arg,`gethostip $node | awk '{print $2}'`,`gethostip ib$node | awk '{print $2}'`
+        echo $arg
+done > lsnodesssh
+
+echo $master,$master.company.com,ib$master,`gethostip $master| awk '{print $2}'`,`gethostip ib$master| awk '{print $2}'` >> lsnodesssh
+
+ssh-keyscan -t rsa,dsa,rsa1 -f lsnodesssh > ssh_known_hosts
+#cp ssh_known_hosts /etc/ssh/.
