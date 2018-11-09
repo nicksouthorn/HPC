@@ -1,0 +1,129 @@
+# Misc Functions
+
+# Generate random text
+# Usage: genRandomText <int>
+function genRandomText() {
+	local n=$1
+	while [ $((n--)) -gt 0 ]
+	do	
+		printf "\x$(printf %x $((RANDOM % 26 + 65)))"
+	done
+echo
+}
+
+# What percentage of X is Y? 
+# Where percent/100 = X/Y => percent=100*X/Y 
+# Usage: wpoxiy 10 5 
+# 50.00% 
+# Example: wpoxiy 30 10 
+# 33.33% 
+
+function wpoxiy() { 
+echo $(bc <<< "scale=2; y=${1}; x=${2}; percent=x*100/y; percent")"%";
+}
+
+# Show all block devices
+function showBlk() {
+	lsblk  -o name,type,fstype,label,partlabel,model,mountpoint,size
+}
+
+# Show internal and external IPs (assuming connected to the internet)
+function showIPS() {
+	EIP=$(curl -s --max-time 10 inet-ip.info)
+	printHr
+	printf "External IP: $EIP\n"
+	IIP=$(hostname -I | awk '{print $1}')
+	printf "Internal IP: $IIP\n"
+	printHr
+}
+
+
+# Print horizontal line
+function printHr() {
+	for ((i=0; i<$(tput cols); i++)) 
+	do 
+		echo -e "=\c"
+	done
+}
+
+# Backup file
+lbkp() {
+now=$(date +%d%m%y"-"%H%M)
+/bin/cp $1{,.old.$now} 
+}
+
+# Show groups in an easy to read format
+function showGroups() {
+user=$1
+id $1 | sed 's/,/\n/g'| tr ' ' '\n'
+}
+
+# Generate password
+function genPasswd() {
+	chars=$1
+	openssl rand -base64 $1
+}
+
+
+# Find and Sum Files in current directory
+function findAndSum() {
+find . -exec ls -all "{}" \; | awk '{COUNTER+=$5} END {SIZE=COUNTER/1024/1024; print "Sum of all found files sizes is: " SIZE " MB"}'
+}
+
+
+# Compare files and write similarities to file
+function commShowSimilar() {
+	
+	comm -1 -2 <(sort $1) <(sort $2) |& tee compare.$$.out 
+
+}
+
+# Open duckduckgo from the terminal
+function ddg(){ 
+	ARGS="$@"
+	nohup xdg-open "https://www.duckduckgo.com/?q=${ARGS}"&
+}
+
+# Show top ten most used commands
+function topTen() {
+	printHr
+	echo "Top Ten Most Used Commands"
+	history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
+	printHr
+}
+
+function extract() {
+ if [ -z "$1" ]; then
+    # display usage if no parameters given
+    echo "Usage: extract <path/file_name>.<zip|rar|bz2|gz|tar|tbz2|tgz|Z|7z|xz|ex|tar.bz2|tar.gz|tar.xz>"
+    echo "       extract <path/file_name_1.ext> [path/file_name_2.ext] [path/file_name_3.ext]"
+    return 1
+ else
+    for n in $@
+    do
+      if [ -f "$n" ] ; then
+          case "${n%,}" in
+            *.tar.bz2|*.tar.gz|*.tar.xz|*.tbz2|*.tgz|*.txz|*.tar) 
+                         tar xvf "$n"       ;;
+            *.lzma)      unlzma ./"$n"      ;;
+            *.bz2)       bunzip2 ./"$n"     ;;
+            *.rar)       unrar x -ad ./"$n" ;;
+            *.gz)        gunzip ./"$n"      ;;
+            *.zip)       unzip ./"$n"       ;;
+            *.z)         uncompress ./"$n"  ;;
+            *.7z|*.arj|*.cab|*.chm|*.deb|*.dmg|*.iso|*.lzh|*.msi|*.rpm|*.udf|*.wim|*.xar)
+                         7z x ./"$n"        ;;
+            *.xz)        unxz ./"$n"        ;;
+            *.exe)       cabextract ./"$n"  ;;
+            *)
+                         echo "extract: '$n' - unknown archive method"
+                         return 1
+                         ;;
+          esac
+      else
+          echo "'$n' - file does not exist"
+          return 1
+      fi
+    done
+fi
+}
