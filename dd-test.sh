@@ -1,4 +1,16 @@
 #!/bin/bash -l
+# ====================================================================================
+# Name: dd-test.sh
+# Description: Script to run a simple dd benchmark and append results to a csv file 
+# Author: Nick Southorn
+# Last mod: 05/04/19
+#           Updated help file
+# ====================================================================================
+# TODO
+# * Pre-flight checks, system info
+# * Add usage section
+# * Add function to plot from csv file using gnuplot
+# ====================================================================================
 
 set -eu
 
@@ -49,4 +61,10 @@ rm $logfile
 echo $(date +"%Y-%m-%d,%H%M%S"),$rate,$HOSTNAME  >> dd-rate.$HOSTNAME.csv
 	
 echo $(date +"%Y-%m-%d,%H%M%S") Done
+
+
+# ====================================================================================
+# END OF FILE
+# ====================================================================================
+
 

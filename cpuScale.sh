@@ -1,5 +1,11 @@
 #!/bin/bash
-# Script to show current CPU scaling settings and modify them
+# ====================================================================================
+# Name: cpuScale.sh
+# Description: Script to show current CPU scaling settings and modify them
+# Author: Nick Southorn
+# Last mod: 05/04/19
+#           Updated help file
+# ====================================================================================
 # Source external functions, such as printHr
 . ~/bin/functions
 # Check script being run as root
@@ -60,3 +66,8 @@ while test $# -gt 0; do
 	esac
 
 done
+
+#=====================================================================================
+# END OF FILE
+#=====================================================================================
+
