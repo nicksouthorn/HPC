@@ -1,23 +1,18 @@
 #!/bin/bash
-# $URL: file:///hosts/gbc.engr.sgi.com/store/sshaw/svn/abaqus_files/run_abq_bmark $
-# $Rev: 5 $
-# $Author: sshaw $
-# $Date: 2011-09-01 14:38:05 -0500 (Thu, 01 Sep 2011) $
-# $Id: run_abq_bmark 5 2011-09-01 19:38:05Z sshaw $
-# $Copyright$
+# ====================================================================================
+# Name: cpuScale.sh
+# Description: This script will launch a series of Abaqus jobs based on core count and 
+#              other parameters passed beloew
+# Author: Nick Southorn
+# Last mod: 05/04/19
+#           Updated help file
+# ====================================================================================
 
 # This script will launch a series of Abaqus jobs based on core count and other
-# parameters passed below.  I tried to make this script fault proof but I can not
-# take responsibility if something goes horribily wrong ;)  Make sure you check
-# the PBS output files for any errors to troubleshoot any issues.  Any questions
-# about this script please contact sshaw at sgi.com.  I used an "at" vs a @ to keep
-# email spamers from grabing my email address.
-
-#  This work is held in copyright as an unpublished work by
-#  Silicon Graphics, Inc., 2006-2011.  All rights reserved.
+# parameters passed below. 
 
 
-# Specify the total number of cores for the PBS job including any hypertreads
+# Specify the total number of cores for the PBS job including any hyperthreads
 CoreCounts="72"
 #CoreCounts="48 24 72  96 12"
 #CoreCounts="144 " # 120 96 72 48 24"
@@ -37,15 +32,11 @@ SCRATCH_LOC="/nas/sshaw"
 EST_WALLCLOCK_HH_MM_SS="4:0:0"
 
 # Specify the full path location of the Abaqus binary
-# Path choices are:
-#ABQ_BIN=/nas/sshaw/v614-1_x8664/6.14-1/code/bin/abq6141
-#ABQ_BIN=/nas/sshaw/v613-2_x8664/6.13-2/code/bin/abq6132
-#ABQ_BIN=/nas/sshaw/v613-1_x8664/6.13-1/code/bin/abq6131
-ABQ_BIN=/nas/sshaw/v613-3_x8664/6.13-3/code/bin/abq6133
+ABQ_BIN=/data/apps/abaqus/6.13-3/code/bin/abq6133
 
 # Do you want to preserve the result files like *.prt,*.odb,*.stt,*.abq,*.res,*.sim?
-# Unless the customer requests above files then set PRESERVE_RESULT_FILES=1 (true=yes)
-# The above files can be GBs in size so the default is 0 (false=no)
+# PRESERVE_RESULT_FILES=1 (yes)
+# The above files can be GBs in size so the default is 0 (no)
 PRESERVE_RESULT_FILES=0
 
 # To specify additional group options like vnode or mem required for the job
@@ -54,7 +45,6 @@ PRESERVE_RESULT_FILES=0
 PBS_SELECT_GRP=""
 
 # list the input file for each job seperated with a space ie. job1.inp job2.inp
-#MASTER_INP="s2a.inp s4b.inp"
 MASTER_INP="Block_Stud_28-84kn.inp "
 
 # list the following include files below seperated with a space or by \
@@ -71,7 +61,7 @@ ADDITIONAL_BMARKFILES=""
 ABA_SUPPORT_FILES="abaqus_v6.env"
 
 #PBS queue
-#queue=f3067
+queue=feaq
 
 #####################################################
 ##### do not modify anything below this comment line #####
@@ -82,12 +72,12 @@ Create_QUEFILE()
 {
 cat <<PBS > qs_aba_${NPES}c_${TCASE}
 #!/bin/bash
-#PBS -N Mercedes_${NPES}c
+#PBS -N customer${NPES}c
 #PBS -l select=${NNODES}:ncpus=${PPN}:mpiprocs=${PPN}:sales_op=none
 #PBS -l place=scatter:excl
 #PBS -l walltime=${EST_WALLCLOCK_HH_MM_SS}
 #PBS -j oe
-#PBS -q f2601noHT
+#PBS -q feaq
 
 cd \${PBS_O_WORKDIR}
 
@@ -187,4 +177,8 @@ printf "\n"
 done
 dependcnt=0
 done
+
+#=====================================================================================
+# END OF FILE
+#=====================================================================================
 
